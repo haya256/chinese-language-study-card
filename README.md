@@ -31,16 +31,16 @@ Firebase Console の **Authentication → ユーザー → ユーザーを追加
 
 ### 3. Firebase の設定を書き込む
 
-`config/firebase.example.js` をコピーして `config/firebase.js` を作成し、Firebase の設定値を記入します。
+`app.js` の先頭にある `firebaseConfig` をご自身の Firebase プロジェクトの設定値に書き換えてください。
 
-```bash
-cp config/firebase.example.js config/firebase.js
-```
-
-`config/firebase.js` を編集：
+> **Firebase の API キーについて**
+> Firebase の API キーは、一般的な API キーとは異なり、**公開しても問題ない設計**になっています。
+> これは Firebase プロジェクトを「識別する」ためのものであり、「認証する」ためのものではありません。
+> データへのアクセス制御は Firestore のセキュリティルールで行うため、API キーが第三者に知られても、不正なデータ操作はセキュリティルールによって防がれます。
+> 詳細は [Firebase 公式ドキュメント](https://firebase.google.com/docs/projects/api-keys) をご参照ください。
 
 ```javascript
-export const firebaseConfig = {
+const firebaseConfig = {
   apiKey: "YOUR_API_KEY",
   authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
   projectId: "YOUR_PROJECT_ID",

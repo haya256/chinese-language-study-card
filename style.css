@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+input {
+  margin: 4px;
+  padding: 6px;
+  font-size: 1rem;
+}
+
+button {
+  margin: 4px;
+  padding: 6px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#wordList {
+  list-style: none;
+  padding: 0;
+}
+
+#wordList li {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}

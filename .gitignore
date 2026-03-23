@@ -1,0 +1,23 @@
+# PMO管理ディレクトリ（非公開）
+pmo/
+
+# 設定ファイル（非公開）
+config/
+
+# ユーザーデータ（非公開）
+data/
+
+# 環境変数
+.env
+.env.local
+
+# Firebase
+.firebase/
+
+# macOS
+.DS_Store
+
+# Vim
+*.swp
+*.swo
+*~

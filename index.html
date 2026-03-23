@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中国語単語帳</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>中国語単語帳</h1>
+
+  <section id="authSection">
+    <div id="loginForm">
+      <input type="email" id="email" placeholder="メールアドレス">
+      <input type="password" id="password" placeholder="パスワード">
+      <button id="loginBtn">ログイン</button>
+      <p id="authMessage"></p>
+    </div>
+    <div id="loggedIn" style="display:none;">
+      <span id="userEmail"></span>
+      <button id="logoutBtn">ログアウト</button>
+    </div>
+  </section>
+
+  <section id="addSection" style="display:none;">
+    <h2>単語を登録する</h2>
+    <div>
+      <input type="text" id="hanzi" placeholder="漢字（例：你好）">
+      <input type="text" id="pinyin" placeholder="ピンイン（例：nǐ hǎo）">
+      <input type="text" id="meaning" placeholder="日本語訳（例：こんにちは）">
+      <button id="addBtn">登録</button>
+    </div>
+    <p id="message"></p>
+  </section>
+
+  <section>
+    <h2>単語一覧</h2>
+    <ul id="wordList"></ul>
+  </section>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
